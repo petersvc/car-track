@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Car Price Tracking</title>
+</head>
+<body>
+<div style="width: 50%;justify-self: center;justify-items: center;">
+    <h1>Seja bem vindo!</h1>
+    <br>
+    <select class="form-select" name="marcas" id="marcas">
+        <option selected value="0">-- Selecione uma marca --</option>
+        <option th:each="marca : ${marcas}" th:value="${marca.getCodigo()}" th:text="${marca.getNome()}"></option>
+    </select>
+    <br>
+<!--    <select class="form-select" name="ano" id="ano">-->
+<!--        <option selected value="0">&#45;&#45; Selecione um ano &#45;&#45;</option>-->
+<!--        <option th:each="ano : ${modelos.getAno()}" th:value="${ano.getCodigo()}" th:text="${ano.getAno()}"></option>-->
+<!--    </select>-->
+<!--    <table class="table table-striped">-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>Codigo</th>-->
+<!--                <th>Nome</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody class="table-group-divider">-->
+<!--            <tr th:each="marca : ${marcas}">-->
+<!--                <td th:text="${marca.getCodigo()}">teste</td>-->
+<!--                <td th:text="${marca.getNome()}"></td>-->
+<!--            </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+</div>
+</body>
+</html>
