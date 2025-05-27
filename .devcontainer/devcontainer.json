@@ -1,0 +1,27 @@
+{
+    "name": "Cartrack",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "shutdownAction": "stopCompose",
+    "mounts": [
+        "source=${env:HOME}/.gitconfig,target=/home/ubuntu/.gitconfig,type=bind",
+        "source=${env:HOME}/.ssh,target=/home/ubuntu/.ssh,type=bind"
+    ],
+    "postCreateCommand": "sh .devcontainer/post-create.sh",
+    "overrideCommand": true,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Codeium.codeium",
+                "usernamehw.errorlens",
+                "redhat.java",
+                "vscjava.vscode-java-debug",
+                "vscjava.vscode-java-test",
+                "vscjava.vscode-maven",
+                "VMware.vscode-spring-boot",
+                "vscjava.vscode-spring-boot-dashboard"
+            ]
+        }
+    }
+}
