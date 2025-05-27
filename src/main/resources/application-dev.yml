@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Price Tracking
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  # datasource:
+  #   url: jdbc:postgresql://cartrack-db:5432/cartrack
+  #   username: postgres
+  #   password: postgres
+  #   driver-class-name: org.postgresql.Driver
+  # jpa:
+  #   hibernate:
+  #     ddl-auto: update
+  #   show-sql: true
+  #   open-in-view: true
+  thymeleaf:
+    cache: false
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true  
+  # web:
+  #   resources:
+  #     static-locations: classpath:/static/, classpath:/public/, classpath:/resources/, classpath:/META-INF/resources/, file:/home/peter-costa/workspace/personal/pictale/uploads/
+server:
+  port: 8080
