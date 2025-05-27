@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ModeloAno {
-    private Marca marca;
-    private Ano ano;
     private Modelo modelo;
+    private Ano ano;
 }
