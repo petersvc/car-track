@@ -51,7 +51,7 @@ public class HomePageController {
     }
 
     private List<ModeloAno> gerarModelosPadrao(Marca marca){
-        Modelo modelo1 = new Modelo("1", "teste_modelo1");
+        Modelo modelo1 = new Modelo(marcaService., "1", "teste_modelo1");
         Modelo modelo2 = new Modelo("2", "teste_modelo2");
         Modelo modelo3 = new Modelo("3", "teste_modelo3");
         Ano ano1 = new Ano("1", "teste_ano1");

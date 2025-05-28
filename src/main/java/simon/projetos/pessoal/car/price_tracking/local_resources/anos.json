@@ -1,0 +1,88 @@
+[
+  {
+    "1001": [
+      {
+        "codigo": "2022-1",
+        "nome": "2022 Gasolina"
+      },
+      {
+        "codigo": "2021-1",
+        "nome": "2021 Gasolina"
+      },
+      {
+        "codigo": "2020-1",
+        "nome": "2020 Gasolina"
+      }
+    ],
+    "1002": [
+      {
+        "codigo": "2022-1",
+        "nome": "2022 Flex"
+      },
+      {
+        "codigo": "2021-1",
+        "nome": "2021 Flex"
+      },
+      {
+        "codigo": "2020-1",
+        "nome": "2020 Flex"
+      }
+    ],
+    "2001": [
+      {
+        "codigo": "2022-1",
+        "nome": "2022 Flex"
+      },
+      {
+        "codigo": "2021-1",
+        "nome": "2021 Flex"
+      },
+      {
+        "codigo": "2020-1",
+        "nome": "2020 Flex"
+      }
+    ],
+    "2002": [
+      {
+        "codigo": "2022-1",
+        "nome": "2022 Gasolina"
+      },
+      {
+        "codigo": "2021-1",
+        "nome": "2021 Gasolina"
+      },
+      {
+        "codigo": "2020-1",
+        "nome": "2020 Gasolina"
+      }
+    ],
+    "3001": [
+      {
+        "codigo": "2022-1",
+        "nome": "2022 Flex"
+      },
+      {
+        "codigo": "2021-1",
+        "nome": "2021 Flex"
+      },
+      {
+        "codigo": "2020-1",
+        "nome": "2020 Flex"
+      }
+    ],
+    "3002": [
+      {
+        "codigo": "2022-1",
+        "nome": "2022 Gasolina"
+      },
+      {
+        "codigo": "2021-1",
+        "nome": "2021 Gasolina"
+      },
+      {
+        "codigo": "2020-1",
+        "nome": "2020 Gasolina"
+      }
+    ]
+  }
+]
