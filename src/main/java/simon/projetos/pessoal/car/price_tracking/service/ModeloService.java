@@ -51,4 +51,13 @@ public class ModeloService {
         }
         return modelosRetorno;
     }
+
+    public Modelo getModeloByCodigo(String codigo) {
+        for (Modelo modelo : modeloRepository.getModelos()){
+            if (modelo.getCodigo().equals(codigo)){
+                return modelo;
+            }
+        }
+        return null;
+    }
 }
