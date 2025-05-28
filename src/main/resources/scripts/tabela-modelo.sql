@@ -1,0 +1,5 @@
+CREATE TABLE modelo (
+    id      BIGSERIAL PRIMARY KEY,
+    codigo  VARCHAR(50) NOT NULL UNIQUE,
+    nome    VARCHAR(255) NOT NULL
+);
