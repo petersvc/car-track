@@ -2,7 +2,8 @@ package simon.projetos.pessoal.car.price_tracking.service.coleta;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import simon.projetos.pessoal.car.price_tracking.entity.*;
+import simon.projetos.pessoal.car.price_tracking.entity.Marca;
+import simon.projetos.pessoal.car.price_tracking.entity.Modelo;
 import simon.projetos.pessoal.car.price_tracking.service.coleta.wrapper.ModeloWrapper;
 
 import java.io.File;

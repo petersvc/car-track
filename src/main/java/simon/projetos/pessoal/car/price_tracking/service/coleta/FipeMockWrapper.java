@@ -1,8 +1,7 @@
 package simon.projetos.pessoal.car.price_tracking.service.coleta;
 
-import lombok.*;
 import simon.projetos.pessoal.car.price_tracking.entity.Ano;
-import simon.projetos.pessoal.car.price_tracking.entity.Car;
+import simon.projetos.pessoal.car.price_tracking.entity.Veiculo;
 import simon.projetos.pessoal.car.price_tracking.entity.Marca;
 import simon.projetos.pessoal.car.price_tracking.entity.Modelo;
 
@@ -13,7 +12,7 @@ public class FipeMockWrapper {
     private List<Marca> marcas;
     private Map<String, List<Modelo>> modelos;
     private Map<String, List<Ano>> anos;
-    private Map<String, Car> veiculos;
+    private Map<String, Veiculo> veiculos;
 
     public List<Marca> getMarcas() {
         return marcas;
@@ -39,11 +38,11 @@ public class FipeMockWrapper {
         this.anos = anos;
     }
 
-    public Map<String, Car> getVeiculos() {
+    public Map<String, Veiculo> getVeiculos() {
         return veiculos;
     }
 
-    public void setVeiculos(Map<String, Car> veiculos) {
+    public void setVeiculos(Map<String, Veiculo> veiculos) {
         this.veiculos = veiculos;
     }
 }

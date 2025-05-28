@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Repository;
 import simon.projetos.pessoal.car.price_tracking.entity.Marca;
+
 import java.util.ArrayList;
 import java.util.List;
 

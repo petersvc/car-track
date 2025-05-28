@@ -1,18 +1,5 @@
 package simon.projetos.pessoal.car.price_tracking.service.coleta;
 
-import org.springframework.core.ParameterizedTypeReference;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-import simon.projetos.pessoal.car.price_tracking.entity.Ano;
-import simon.projetos.pessoal.car.price_tracking.entity.Car;
-import simon.projetos.pessoal.car.price_tracking.entity.Marca;
-import simon.projetos.pessoal.car.price_tracking.entity.ModeloAno;
-
-import java.util.Comparator;
-import java.util.List;
-
 //@Service
 //public class ApiDataFetcher implements DataFetcher {
 //    RestTemplate restTemplate = new RestTemplate();
