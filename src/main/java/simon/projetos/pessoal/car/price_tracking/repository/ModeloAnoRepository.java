@@ -22,12 +22,13 @@ public class ModeloAnoRepository {
     }
 
     public List<ModeloAno> getByMarca(Marca marca){
-        List<ModeloAno> modelos = new ArrayList<>();
-        for (ModeloAno modeloAno : modelos) {
-            if (modeloAno.getMarca().equals(marca)) {
-                modelos.add(modeloAno);
-            }
-        }
-        return modelos;
+//        List<ModeloAno> modelos = new ArrayList<>();
+//        for (ModeloAno modeloAno : modelos) {
+//            if (modeloAno.getMarca().equals(marca)) {
+//                modelos.add(modeloAno);
+//            }
+//        }
+//        return modelos;
+        return null;
     }
 }
