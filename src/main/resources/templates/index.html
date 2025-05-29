@@ -26,21 +26,20 @@
         <option selected value="0">-- Selecione um modelo --</option>
     </select>
 
-    <!-- A tabela abaixo continuará oculta ou comentada -->
-    <!--    <table class="table table-striped">-->
-    <!--        <thead>-->
-    <!--            <tr>-->
-    <!--                <th>Codigo</th>-->
-    <!--                <th>Nome</th>-->
-    <!--            </tr>-->
-    <!--        </thead>-->
-    <!--        <tbody class="table-group-divider">-->
-    <!--            <tr th:each="marca : ${marcas}">-->
-    <!--                <td th:text="${marca.getCodigo()}">teste</td>-->
-    <!--                <td th:text="${marca.getNome()}"></td>-->
-    <!--            </tr>-->
-    <!--        </tbody>-->
-    <!--    </table>-->
+    <button class="btn btn-primary" id="submeter_pesquisa" onclick="gerarTabelaFiltrada()">Submeter</button>
+
+    <table class="table table-striped" id="table-veiculos" style="display: none">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Nome</th>
+                <th>Valor</th>
+                <th>Combustível</th>
+            </tr>
+        </thead>
+        <tbody class="table-group-divider" id="tabela-veiculos-content">
+        </tbody>
+    </table>
 </div>
 
 <script>
@@ -71,6 +70,49 @@
                 modeloSelect.disabled = true;
             });
     });
+    function gerarTabelaFiltrada() {
+        const marcaSelect = document.getElementById('marcas');
+        const modeloSelect = document.getElementById('modelos');
+        const tablebody = document.getElementById('table-veiculos');
+        const tableContent = document.getElementById('tabela-veiculos-content');
+
+        if (marcaSelect.value === "0" || modeloSelect.value === "0") {
+            tablebody.style.display = "none";
+            return;
+        }
+
+        fetch('/veiculosModelo/'+modeloSelect.value)
+            .then(response => response.json())
+            .then(data => {
+                data.forEach(veiculo => {
+                    const table_line = document.createElement('tr');
+
+                    const td_codigo = document.createElement('td');
+                    td_codigo.innerHTML = veiculo.codigoFipe;
+
+                    const td_nome = document.createElement('td');
+                    td_nome.innerHTML = veiculo.modelo.nome + " - " + veiculo.ano;
+
+                    const td_combustivel = document.createElement('td');
+                    td_combustivel.innerHTML = veiculo.combustivel;
+
+                    const td_valor = document.createElement('td');
+                    td_valor.innerHTML = veiculo.valor;
+
+                    table_line.appendChild(td_codigo);
+                    table_line.appendChild(td_nome);
+                    table_line.appendChild(td_valor);
+                    table_line.appendChild(td_combustivel);
+
+                    tableContent.appendChild(table_line);
+                });
+                tablebody.style.display = "block";
+            })
+            .catch(error => {
+                console.error('Erro ao buscar veiculos:', error);
+                tablebody.style.display = "none"
+            });
+    }
 </script>
 </body>
 </html>
