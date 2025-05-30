@@ -12,7 +12,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.servlet.ModelAndView;
 
-import simon.projetos.pessoal.car.price_tracking.controller.HomePageController;
 import simon.projetos.pessoal.car.price_tracking.entity.Marca;
 import simon.projetos.pessoal.car.price_tracking.entity.Modelo;
 import simon.projetos.pessoal.car.price_tracking.entity.Veiculo;
