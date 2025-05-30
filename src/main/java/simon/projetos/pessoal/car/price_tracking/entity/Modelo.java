@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Modelo {
+    private Marca marca;
     private String codigo;
     private String nome;
 }

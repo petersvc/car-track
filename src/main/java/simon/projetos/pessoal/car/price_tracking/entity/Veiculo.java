@@ -4,17 +4,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Car {
-    private String TipoVeiculo;
-    private String Valor;
-    private Marca Marca;
-    private Modelo Modelo;
-    private Ano AnoModelo;
-    private String Combustivel;
+public class Veiculo {
     private String CodigoFipe;
-    private String MesReferencia;
+    private Modelo Modelo;
+    private Integer Ano;
+    private String Combustivel;
     private String SiglaCombustivel;
+    private Integer TipoVeiculo;
+    private BigDecimal Valor;
+    private String MesReferencia;
 }

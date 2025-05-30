@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Repository;
-import simon.projetos.pessoal.car.price_tracking.entity.Marca;
+import simon.projetos.pessoal.car.price_tracking.entity.Modelo;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,10 +13,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Repository
-public class MarcaRepository {
-    private List<Marca> marcas = new ArrayList<>();
+public class ModeloRepository {
+    List<Modelo> modelos = new ArrayList<>();
 
-    public void addMarca(Marca marca){
-        marcas.add(marca);
+    public void addModelo(Modelo modelo) {
+        modelos.add(modelo);
     }
 }
